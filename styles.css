@@ -1,0 +1,172 @@
+/*=== GLOBAL ===*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+html {
+  background-color: #f9ecf2;
+}
+
+.content {
+  display: flex;
+}
+
+/*=== HEADER ===*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #ffccdd;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+li {
+  margin: 12px 24px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+li:nth-child(1) {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 12px 24px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  outline: none;
+  border: 2px solid #ffffff;
+}
+
+button {
+  margin: 12px 24px;
+  background-color: #ff4d88;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+#menu {
+  display: none;
+}
+
+/*=== MAIN ===*/
+
+.homepage-pic img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 16px 16px;
+  background-color: #ffffff;
+}
+
+.title h1 {
+  font-size: 2em;
+}
+
+/*=== BOOKS ===*/
+
+.book {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 16px 16px;
+  background-color: #ffffff;
+}
+
+.main {
+  margin: 24px;
+}
+
+.book > img {
+  width: 100%;
+  padding: 24px;
+}
+
+/*=== SideBar ===*/
+
+aside {
+  margin: 40px 24px;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 24px;
+  height: 100%;
+}
+
+aside img {
+  width: 100%;
+}
+
+aside h3 {
+  font-size: 1.5em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/*=== Media Queries ===*/
+@media only screen and (max-width: 975px) {
+
+  .main {
+    width: 100%;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    max-width: 100%;
+    margin: 40px;
+  }
+
+  #menu {
+    display: block;
+    margin: 12px 24px;
+    position: fixed;
+    right: 16px;
+    top: 12px;
+  }
+
+  .navlink {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+}
